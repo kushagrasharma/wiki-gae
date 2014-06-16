@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block content %}
+  {{post.render() | safe}}
+
+<hr>
+Queried {{seconds}} seconds ago
+{% endblock %}
